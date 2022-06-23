@@ -9,12 +9,12 @@ public class CustomRestEndpoint {
     @RequestMapping(value = "/CustomRestEndpoint", method= RequestMethod.GET)
     public String sayHello(@RequestParam(value="name", required=false,
             defaultValue="World") String name) {
-        return "Hello World";
+        return "Hello World: " + name;
     }
 
     @RequestMapping(value = "/CustomRestEndpoint/{name}", method= RequestMethod.GET)
     public String sayHelloAgain(@PathVariable String name) {
-        return "Hello World";
+        return "Hello World " + name;
     }
 
     @Timed
