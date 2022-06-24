@@ -25,7 +25,6 @@ public class CustomRestEndpoint {
         System.out.println("-------- Custom Endpoint Successfully called ------");
         System.out.println("---------------------------------------------------");
         System.out.println("---------------------------------------------------");
-
     }
 
 }
